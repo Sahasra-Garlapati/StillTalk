@@ -28,9 +28,24 @@ Built with 💻 HTML, CSS, JavaScript, Python (Flask) and powered by OpenRouter 
 ---
 
 ## 🚀 How to Run the Project Locally
+## 🔐 Setup Your Own API Key (Required)
 
-### 1. Clone the Repo
+1.To run StillTalk, you must provide your own [OpenRouter](https://openrouter.ai/) API key:
 
-```bash
-git clone https://github.com/your-username/stilltalk-ai-chatbot.git
-cd stilltalk-ai-chatbot
+i. Go to [OpenRouter API Keys](https://openrouter.ai/keys) and log in.
+ii. Click **"Create Key"** → Give it any name → Copy the generated key.
+iii. Open `main.py` and replace:
+   ```python
+   OPENROUTER_API_KEY = "your_openrouter_api_key_here"
+   OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxxxxxxxxxxxxx
+   echo ".env" >> .gitignore
+
+2. Clone the repository
+git clone https://github.com/your-username/stilltalk.git
+cd stilltalk
+
+3. Install Dependencies
+pip install flask requests
+
+4. Run the Application
+python main.py
