@@ -3,7 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-OPENROUTER_API_KEY = "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"  # Replace with your real key
+OPENROUTER_API_KEY = "your_openrouter_api_key_here"  # Replace with your real key
+#To create your own API Key please open README how to create
 
 @app.route("/")
 def home():
