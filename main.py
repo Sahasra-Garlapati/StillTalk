@@ -1,3 +1,4 @@
+#To run this AI BOT Please read the deatils - How to run AI BOT using README file
 from flask import Flask, request, jsonify, send_from_directory
 import requests
 
